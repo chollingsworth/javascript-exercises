@@ -9,9 +9,9 @@ jobs:
     steps: 
       - checkout
       - node/install-packages:
-          pkg-manager: npm
+          pkg-manager: pnpm
       - run:
-          command: npm run test solution
+          command: pnpm run test solution
           name: Run tests in **/solution/*.spec.js
 
 workflows:
